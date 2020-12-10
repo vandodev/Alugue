@@ -22,7 +22,6 @@ if(!fontsLoader){
 
   return (
     <>
-      <Text>Olá mundo</Text>
       <StatusBar style="light" backgroundColor="#000" translucent={false}/>
       <Routes />
     </>
