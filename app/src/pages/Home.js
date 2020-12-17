@@ -5,6 +5,7 @@ import {Feather} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 
 import New from '../components/New';
+import House from '../components/House';
 
 export default function Home() {
 
@@ -52,6 +53,31 @@ export default function Home() {
                     description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
                     onPress={() => navigation.navigate('datails') }
                 />
+
+            </ScrollView>
+
+            <View style={{flexDirection:'row', marginBottom:10,alignItems:'center'}}>
+                <Text style={[styles.title,{marginTop:20}]}>Próximo de você</Text>
+            </View>
+
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15,}}>
+
+                <House
+                    cover={require('../assets/house1.jpg')}
+                />
+
+                <House
+                    cover={require('../assets/house1.jpg')}
+                />
+
+                 <House
+                    cover={require('../assets/house2.jpg')}
+                />
+
+                 <House
+                    cover={require('../assets/house3.jpg')}
+                />
+
 
             </ScrollView>
 
