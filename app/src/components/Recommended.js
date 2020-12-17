@@ -9,8 +9,9 @@ export default function Recommended({cover, house, offer }) {
         blurRadius={2}
       >
 
-          <Text style={styles.house, styles.shadow}>{house}</Text>
-          <Text style={styles.description, styles.shadow}>{offer} OFF</Text>
+          <Text style={[styles.house, styles.shadow]}>{house}</Text>
+          <Text style={[styles.description, styles.shadow]}>{offer} OFF</Text>
+          
 
       </ImageBackground>
     );
