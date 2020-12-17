@@ -39,7 +39,38 @@ export default function Datails() {
 
             </View>
 
+            <Text style={styles.price}>
+                 R$ 1.200,20
+            </Text>
             
+            <Text style={styles.description}>
+                Casa nova uma quadra do mar, lugar seguro e monitorado 24horas.
+            </Text>
+
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15, marginTop:35}}>
+                
+                <View style={styles.slide}>
+                    <Image
+                        source={require('../assets/house6.jpg')}
+                        style={{width:90, height:90, borderRadius:8}}
+                    />
+                </View>
+
+                <View style={styles.slide}>
+                    <Image
+                        source={require('../assets/house1.jpg')}
+                        style={{width:90, height:90, borderRadius:8}}
+                    />
+                </View>
+
+                <View style={styles.slide}>
+                    <Image
+                        source={require('../assets/house4.jpg')}
+                        style={{width:90, height:90, borderRadius:8}}
+                    />
+                </View>
+
+            </ScrollView>
 
         </View>
     );
@@ -84,5 +115,31 @@ const styles = StyleSheet.create({
         textShadowOffset: {width: 1, height: 1},
         textShadowRadius:1,
     },
+
+    price:{
+        paddingHorizontal:20,
+        fontFamily:'Montserrat_700Bold',
+        fontSize:16,
+        color:'#000',
+    },
+
+    description:{
+        fontFamily:'Montserrat_500Medium',
+        paddingHorizontal:20,
+        color:'#b3aeae',
+        fontSize:14,
+        lineHeight:20,
+        marginTop:20,
+    },
+
+    slide:{
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'#FFF',
+        width: 90,
+        height: 90,
+        borderRadius:8,
+        marginRight:20
+    }
 
 });
