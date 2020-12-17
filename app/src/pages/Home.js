@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import New from '../components/New';
 import House from '../components/House';
+import Recommended from '../components/Recommended';
 
 export default function Home() {
 
@@ -78,6 +79,31 @@ export default function Home() {
                     cover={require('../assets/house3.jpg')}
                 />
 
+
+            </ScrollView>
+
+            
+            <Text style={[styles.title,{marginTop:20}]}>Dica do dia</Text>
+            
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15,}}>
+
+                <Recommended
+                    cover={require('../assets/house1.jpg')}
+                    house="Casa Santos"
+                    offer="25%"
+                />
+
+                <Recommended
+                    cover={require('../assets/house5.jpg')}
+                    house="Casa Ubatuba"
+                    offer="20%"
+                />
+
+                <Recommended
+                    cover={require('../assets/house2.jpg')}
+                    house="Casa Práia"
+                    offer="10%"
+                />
 
             </ScrollView>
 
